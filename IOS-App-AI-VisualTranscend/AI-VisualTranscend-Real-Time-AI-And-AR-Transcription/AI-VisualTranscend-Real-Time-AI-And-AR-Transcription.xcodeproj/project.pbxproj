@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		F1A3CAC42D5136C800D61D73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1A3CAAB2D5136C700D61D73 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1A3CAB22D5136C700D61D73;
+			remoteInfo = "AI-VisualTranscend-Real-Time-AI-And-AR-Transcription";
+		};
+		F1A3CACE2D5136C800D61D73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1A3CAAB2D5136C700D61D73 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1A3CAB22D5136C700D61D73;
+			remoteInfo = "AI-VisualTranscend-Real-Time-AI-And-AR-Transcription";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F1A3CAB32D5136C700D61D73 /* AI-VisualTranscend-Real-Time-AI-And-AR-Transcription.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AI-VisualTranscend-Real-Time-AI-And-AR-Transcription.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1A3CAC32D5136C800D61D73 /* AI-VisualTranscend-Real-Time-AI-And-AR-TranscriptionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AI-VisualTranscend-Real-Time-AI-And-AR-TranscriptionTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1A3CACD2D5136C800D61D73 /* AI-VisualTranscend-Real-Time-AI-And-AR-TranscriptionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AI-VisualTranscend-Real-Time-AI-And-AR-TranscriptionUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		F1A3CAB52D5136C700D61D73 /* AI-VisualTranscend-Real-Time-AI-And-AR-Transcription */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "AI-VisualTranscend-Real-Time-AI-And-AR-Transcription";
+			sourceTree = "<group>";
+		};
+		F1A3CAC62D5136C800D61D73 /* AI-VisualTranscend-Real-Time-AI-And-AR-TranscriptionTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "AI-VisualTranscend-Real-Time-AI-And-AR-TranscriptionTests";
+			sourceTree = "<group>";
+		};
+		F1A3CAD02D5136C800D61D73 /* AI-VisualTranscend-Real-Time-AI-And-AR-TranscriptionUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "AI-VisualTranscend-Real-Time-AI-And-AR-TranscriptionUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F1A3CAB02D5136C700D61D73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1A3CAC02D5136C800D61D73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1A3CACA2D5136C800D61D73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F1A3CAAA2D5136C700D61D73 = {
+			isa = PBXGroup;
+			children = (
+				F1A3CAB52D5136C700D61D73 /* AI-VisualTranscend-Real-Time-AI-And-AR-Transcription */,
+				F1A3CAC62D5136C800D61D73 /* AI-VisualTranscend-Real-Time-AI-And-AR-TranscriptionTests */,
+				F1A3CAD02D5136C800D61D73 /* AI-VisualTranscend-Real-Time-AI-And-AR-TranscriptionUITests */,
+				F1A3CAB42D5136C700D61D73 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F1A3CAB42D5136C700D61D73 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1A3CAB32D5136C700D61D73 /* AI-VisualTranscend-Real-Time-AI-And-AR-Transcription.app */,
+				F1A3CAC32D5136C800D61D73 /* AI-VisualTranscend-Real-Time-AI-And-AR-TranscriptionTests.xctest */,
+				F1A3CACD2D5136C800D61D73 /* AI-VisualTranscend-Real-Time-AI-And-AR-TranscriptionUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F1A3CAB22D5136C700D61D73 /* AI-VisualTranscend-Real-Time-AI-And-AR-Transcription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1A3CAD72D5136C800D61D73 /* Build configuration list for PBXNativeTarget "AI-VisualTranscend-Real-Time-AI-And-AR-Transcription" */;
+			buildPhases = (
+				F1A3CAAF2D5136C700D61D73 /* Sources */,
+				F1A3CAB02D5136C700D61D73 /* Frameworks */,
+				F1A3CAB12D5136C700D61D73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				F1A3CAB52D5136C700D61D73 /* AI-VisualTranscend-Real-Time-AI-And-AR-Transcription */,
+			);
+			name = "AI-VisualTranscend-Real-Time-AI-And-AR-Transcription";
+			packageProductDependencies = (
+			);
+			productName = "AI-VisualTranscend-Real-Time-AI-And-AR-Transcription";
+			productReference = F1A3CAB32D5136C700D61D73 /* AI-VisualTranscend-Real-Time-AI-And-AR-Transcription.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F1A3CAC22D5136C800D61D73 /* AI-VisualTranscend-Real-Time-AI-And-AR-TranscriptionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1A3CADA2D5136C800D61D73 /* Build configuration list for PBXNativeTarget "AI-VisualTranscend-Real-Time-AI-And-AR-TranscriptionTests" */;
+			buildPhases = (
+				F1A3CABF2D5136C800D61D73 /* Sources */,
+				F1A3CAC02D5136C800D61D73 /* Frameworks */,
+				F1A3CAC12D5136C800D61D73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1A3CAC52D5136C800D61D73 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				F1A3CAC62D5136C800D61D73 /* AI-VisualTranscend-Real-Time-AI-And-AR-TranscriptionTests */,
+			);
+			name = "AI-VisualTranscend-Real-Time-AI-And-AR-TranscriptionTests";
+			packageProductDependencies = (
+			);
+			productName = "AI-VisualTranscend-Real-Time-AI-And-AR-TranscriptionTests";
+			productReference = F1A3CAC32D5136C800D61D73 /* AI-VisualTranscend-Real-Time-AI-And-AR-TranscriptionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F1A3CACC2D5136C800D61D73 /* AI-VisualTranscend-Real-Time-AI-And-AR-TranscriptionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1A3CADD2D5136C800D61D73 /* Build configuration list for PBXNativeTarget "AI-VisualTranscend-Real-Time-AI-And-AR-TranscriptionUITests" */;
+			buildPhases = (
+				F1A3CAC92D5136C800D61D73 /* Sources */,
+				F1A3CACA2D5136C800D61D73 /* Frameworks */,
+				F1A3CACB2D5136C800D61D73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1A3CACF2D5136C800D61D73 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				F1A3CAD02D5136C800D61D73 /* AI-VisualTranscend-Real-Time-AI-And-AR-TranscriptionUITests */,
+			);
+			name = "AI-VisualTranscend-Real-Time-AI-And-AR-TranscriptionUITests";
+			packageProductDependencies = (
+			);
+			productName = "AI-VisualTranscend-Real-Time-AI-And-AR-TranscriptionUITests";
+			productReference = F1A3CACD2D5136C800D61D73 /* AI-VisualTranscend-Real-Time-AI-And-AR-TranscriptionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1A3CAAB2D5136C700D61D73 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					F1A3CAB22D5136C700D61D73 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					F1A3CAC22D5136C800D61D73 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = F1A3CAB22D5136C700D61D73;
+					};
+					F1A3CACC2D5136C800D61D73 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = F1A3CAB22D5136C700D61D73;
+					};
+				};
+			};
+			buildConfigurationList = F1A3CAAE2D5136C700D61D73 /* Build configuration list for PBXProject "AI-VisualTranscend-Real-Time-AI-And-AR-Transcription" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F1A3CAAA2D5136C700D61D73;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = F1A3CAB42D5136C700D61D73 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1A3CAB22D5136C700D61D73 /* AI-VisualTranscend-Real-Time-AI-And-AR-Transcription */,
+				F1A3CAC22D5136C800D61D73 /* AI-VisualTranscend-Real-Time-AI-And-AR-TranscriptionTests */,
+				F1A3CACC2D5136C800D61D73 /* AI-VisualTranscend-Real-Time-AI-And-AR-TranscriptionUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F1A3CAB12D5136C700D61D73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1A3CAC12D5136C800D61D73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1A3CACB2D5136C800D61D73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F1A3CAAF2D5136C700D61D73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1A3CABF2D5136C800D61D73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1A3CAC92D5136C800D61D73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F1A3CAC52D5136C800D61D73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1A3CAB22D5136C700D61D73 /* AI-VisualTranscend-Real-Time-AI-And-AR-Transcription */;
+			targetProxy = F1A3CAC42D5136C800D61D73 /* PBXContainerItemProxy */;
+		};
+		F1A3CACF2D5136C800D61D73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1A3CAB22D5136C700D61D73 /* AI-VisualTranscend-Real-Time-AI-And-AR-Transcription */;
+			targetProxy = F1A3CACE2D5136C800D61D73 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F1A3CAD52D5136C800D61D73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F1A3CAD62D5136C800D61D73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F1A3CAD82D5136C800D61D73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AI-VisualTranscend-Real-Time-AI-And-AR-Transcription/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AIVisualTranscend.AI-VisualTranscend-Real-Time-AI-And-AR-Transcription";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F1A3CAD92D5136C800D61D73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AI-VisualTranscend-Real-Time-AI-And-AR-Transcription/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AIVisualTranscend.AI-VisualTranscend-Real-Time-AI-And-AR-Transcription";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F1A3CADB2D5136C800D61D73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AIVisualTranscend.AI-VisualTranscend-Real-Time-AI-And-AR-TranscriptionTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AI-VisualTranscend-Real-Time-AI-And-AR-Transcription.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AI-VisualTranscend-Real-Time-AI-And-AR-Transcription";
+			};
+			name = Debug;
+		};
+		F1A3CADC2D5136C800D61D73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AIVisualTranscend.AI-VisualTranscend-Real-Time-AI-And-AR-TranscriptionTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AI-VisualTranscend-Real-Time-AI-And-AR-Transcription.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AI-VisualTranscend-Real-Time-AI-And-AR-Transcription";
+			};
+			name = Release;
+		};
+		F1A3CADE2D5136C800D61D73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AIVisualTranscend.AI-VisualTranscend-Real-Time-AI-And-AR-TranscriptionUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "AI-VisualTranscend-Real-Time-AI-And-AR-Transcription";
+			};
+			name = Debug;
+		};
+		F1A3CADF2D5136C800D61D73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AIVisualTranscend.AI-VisualTranscend-Real-Time-AI-And-AR-TranscriptionUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "AI-VisualTranscend-Real-Time-AI-And-AR-Transcription";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F1A3CAAE2D5136C700D61D73 /* Build configuration list for PBXProject "AI-VisualTranscend-Real-Time-AI-And-AR-Transcription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1A3CAD52D5136C800D61D73 /* Debug */,
+				F1A3CAD62D5136C800D61D73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1A3CAD72D5136C800D61D73 /* Build configuration list for PBXNativeTarget "AI-VisualTranscend-Real-Time-AI-And-AR-Transcription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1A3CAD82D5136C800D61D73 /* Debug */,
+				F1A3CAD92D5136C800D61D73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1A3CADA2D5136C800D61D73 /* Build configuration list for PBXNativeTarget "AI-VisualTranscend-Real-Time-AI-And-AR-TranscriptionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1A3CADB2D5136C800D61D73 /* Debug */,
+				F1A3CADC2D5136C800D61D73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1A3CADD2D5136C800D61D73 /* Build configuration list for PBXNativeTarget "AI-VisualTranscend-Real-Time-AI-And-AR-TranscriptionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1A3CADE2D5136C800D61D73 /* Debug */,
+				F1A3CADF2D5136C800D61D73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F1A3CAAB2D5136C700D61D73 /* Project object */;
+}
