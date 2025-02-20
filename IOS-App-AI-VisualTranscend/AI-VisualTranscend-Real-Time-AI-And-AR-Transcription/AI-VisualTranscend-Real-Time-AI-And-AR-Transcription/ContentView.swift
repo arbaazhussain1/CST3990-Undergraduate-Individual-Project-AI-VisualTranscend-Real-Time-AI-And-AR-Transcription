@@ -1,4 +1,6 @@
 import SwiftUI
+import Speech
+import AVFoundation
 
 struct TypingTextView: View {
     let fullText: String
@@ -133,19 +135,20 @@ struct SignInView: View {
     var body: some View {
         NavigationStack {
             ZStack {
-                Color.white.ignoresSafeArea()
-                    .onTapGesture { dismissKeyboard() }
-
+                Color(.systemBackground).ignoresSafeArea() // Adapts to Light/Dark Mode
+                        .onTapGesture { dismissKeyboard() }
                 VStack {
                     Text("Sign In")
                         .font(.largeTitle)
                         .fontWeight(.bold)
+                        .foregroundColor(Color.primary) // Adapts text colour automatically
                         .padding()
 
                     // Email Field
                     TextField("Email", text: $email)
                         .keyboardType(.emailAddress)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .background(Color(.secondarySystemBackground)) // Consistent adaptive background
                         .padding()
                         .textInputAutocapitalization(.none)
                         .disableAutocorrection(true)
@@ -164,6 +167,7 @@ struct SignInView: View {
                     //  Password Field
                     SecureField("Password", text: $password)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .background(Color(.secondarySystemBackground)) // Consistent adaptive background
                         .padding()
                         .textInputAutocapitalization(.none)
                         .disableAutocorrection(true)
@@ -279,17 +283,18 @@ struct SignUpView: View {
     var body: some View {
         NavigationStack {
             ZStack {
-                Color.white.ignoresSafeArea()
-                    .onTapGesture { dismissKeyboard() }
-
+                Color(.systemBackground).ignoresSafeArea() // Adapts to Light/Dark Mode
+                        .onTapGesture { dismissKeyboard() }
                 VStack {
                     Text("Sign Up")
                         .font(.largeTitle)
                         .fontWeight(.bold)
+                        .foregroundColor(Color.primary) // Adapts text colour automatically
                         .padding()
 
                     TextField("First Name", text: $firstName)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .background(Color(.secondarySystemBackground)) // Consistent adaptive background
                         .padding()
                         .focused($focusedField, equals: .firstName)
                         .submitLabel(.next)
@@ -297,6 +302,7 @@ struct SignUpView: View {
 
                     TextField("Last Name", text: $lastName)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .background(Color(.secondarySystemBackground)) // Consistent adaptive background
                         .padding()
                         .focused($focusedField, equals: .lastName)
                         .submitLabel(.next)
@@ -304,6 +310,7 @@ struct SignUpView: View {
 
                     TextField("Username", text: $username)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .background(Color(.secondarySystemBackground)) // Consistent adaptive background
                         .padding()
                         .focused($focusedField, equals: .username)
                         .submitLabel(.next)
@@ -313,6 +320,7 @@ struct SignUpView: View {
                     TextField("Email", text: $email)
                         .keyboardType(.emailAddress)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .background(Color(.secondarySystemBackground)) // Consistent adaptive background
                         .padding()
                         .textInputAutocapitalization(.none)
                         .disableAutocorrection(true)
@@ -331,6 +339,7 @@ struct SignUpView: View {
                     //  Password Field with Validation
                     SecureField("Password", text: $password)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .background(Color(.secondarySystemBackground)) // Consistent adaptive background
                         .padding()
                         .textInputAutocapitalization(.none)
                         .disableAutocorrection(true)
@@ -414,51 +423,175 @@ struct SignUpView: View {
     }
 }
 
+
+
 struct HomeView: View {
     @State private var isLoggedOut = false  // Controls logout navigation
+    @StateObject private var speechRecogniser = SpeechRecogniser()
+    @State private var isRecording = false
+    @State private var transcriptionText = ""
 
     var body: some View {
         ZStack {
             // Gradient Background from Black to Blue (#0A07F0)
             LinearGradient(
                 gradient: Gradient(colors: [Color.black, Color(red: 10/255, green: 7/255, blue: 240/255)]),
-                        startPoint: .topLeading,
-                            endPoint: .bottomTrailing
-                        )
-                       .ignoresSafeArea()
+                startPoint: .topLeading,
+                endPoint: .bottomTrailing
+            )
+            .ignoresSafeArea()
+
             VStack {
                 Spacer()
 
-                Text("Welcome to Home Page!")
+                Text("Real-Time Transcription")
                     .font(.largeTitle)
                     .foregroundColor(.white)
                     .fontWeight(.bold)
                     .padding()
 
-                Text("You are now signed in.")
-                    .font(.title)
-                    .foregroundColor(.white)
-                    .padding()
+                ScrollView {
+                    Text(transcriptionText.isEmpty ? "Transcribed text will appear here..." : transcriptionText)
+                        .foregroundColor(.white)
+                        .padding()
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                }
+                .background(Color(.secondarySystemBackground).opacity(0.5))
+                .cornerRadius(10)
+                .padding()
+                .frame(height: 300)
+
+                Button(action: {
+                    if isRecording {
+                        speechRecogniser.stopTranscribing()
+                        transcriptionText = speechRecogniser.transcription
+                    } else {
+                        transcriptionText = ""
+                        speechRecogniser.startTranscribing()
+                    }
+                    isRecording.toggle()
+                }) {
+                    Text(isRecording ? "Stop Recording" : "Start Recording")
+                        .foregroundColor(.white)
+                        .padding()
+                        .frame(maxWidth: .infinity)
+                        .background(isRecording ? Color.red : Color.green)
+                        .cornerRadius(10)
+                }
+                .padding()
 
                 Spacer()
             }
-            .navigationBarBackButtonHidden(true) //  Hides the back button
-            .navigationBarItems(trailing: Button(action: logout) { //  Logout button
-                Image(systemName: "power") // Logout icon
+            .navigationBarBackButtonHidden(true)
+            .navigationBarItems(trailing: Button(action: logout) {
+                Image(systemName: "power")
                     .foregroundColor(.red)
             })
         }
-        .fullScreenCover(isPresented: $isLoggedOut) {  //  Forces full-screen navigation
+        .fullScreenCover(isPresented: $isLoggedOut) {
             ContentView()
-                .interactiveDismissDisabled(true) //  Prevents swipe dismissal
+                .interactiveDismissDisabled(true)
+        }
+        .onAppear {
+            speechRecogniser.requestAuthorisation()
         }
     }
 
-    /// Function to handle logout
     private func logout() {
         isLoggedOut = true
     }
 }
+
+final class SpeechRecogniser: ObservableObject {
+    @Published var transcription = ""
+
+    private var speechRecogniser = SFSpeechRecognizer(locale: Locale(identifier: "en-UK"))
+    private var recognitionRequest: SFSpeechAudioBufferRecognitionRequest?
+    private var recognitionTask: SFSpeechRecognitionTask?
+    private let audioEngine = AVAudioEngine()
+
+    func requestAuthorisation() {
+        SFSpeechRecognizer.requestAuthorization { authStatus in
+            switch authStatus {
+            case .authorized:
+                print("Speech recognition authorised")
+            case .denied, .restricted, .notDetermined:
+                print(" Speech recognition not authorised")
+            @unknown default:
+                print(" Unknown authorisation status")
+            }
+        }
+    }
+
+    func startTranscribing() {
+        guard let recognizer = SFSpeechRecognizer(), recognizer.isAvailable else {
+            print(" Speech recogniser is not available")
+            return
+        }
+
+        recognitionRequest = SFSpeechAudioBufferRecognitionRequest()
+        recognitionRequest?.shouldReportPartialResults = true
+
+        //  Properly configure the audio session
+        do {
+            let audioSession = AVAudioSession.sharedInstance()
+            try audioSession.setCategory(.record, mode: .measurement, options: .duckOthers)
+            try audioSession.setPreferredSampleRate(44100) //  Set preferred sample rate
+            try audioSession.setActive(true, options: .notifyOthersOnDeactivation)
+        } catch {
+            print(" Failed to set up audio session: \(error.localizedDescription)")
+            return
+        }
+
+        //  Dynamically matches hardware-supported format to avoid mismatches
+
+        let inputNode = audioEngine.inputNode
+        let recordingFormat = inputNode.outputFormat(forBus: 0)  //  Dynamically uses hardware format
+        
+
+        inputNode.removeTap(onBus: 0) // Prevent multiple taps
+        inputNode.installTap(onBus: 0, bufferSize: 1024, format: recordingFormat) { buffer, _ in
+            self.recognitionRequest?.append(buffer)
+        }
+
+        audioEngine.prepare()
+        do {
+            try audioEngine.start()
+            print(" Audio engine started")
+        } catch {
+            print(" Audio engine couldn't start: \(error.localizedDescription)")
+        }
+
+        recognitionTask = recognizer.recognitionTask(with: recognitionRequest!) { result, error in
+            if let result = result {
+                DispatchQueue.main.async {
+                    self.transcription = result.bestTranscription.formattedString
+                }
+            }
+
+            if let error = error {
+                print(" Recognition error: \(error.localizedDescription)")
+                self.stopTranscribing()
+            }
+        }
+    }
+
+    func stopTranscribing() {
+        audioEngine.stop()
+        audioEngine.inputNode.removeTap(onBus: 0)
+        recognitionRequest?.endAudio()
+        recognitionTask?.cancel()
+        recognitionTask = nil
+
+        do {
+            try AVAudioSession.sharedInstance().setActive(false, options: .notifyOthersOnDeactivation)
+            print(" Audio session deactivated")
+        } catch {
+            print(" Failed to deactivate audio session: \(error.localizedDescription)")
+        }
+    }
+}
+
 
 
    

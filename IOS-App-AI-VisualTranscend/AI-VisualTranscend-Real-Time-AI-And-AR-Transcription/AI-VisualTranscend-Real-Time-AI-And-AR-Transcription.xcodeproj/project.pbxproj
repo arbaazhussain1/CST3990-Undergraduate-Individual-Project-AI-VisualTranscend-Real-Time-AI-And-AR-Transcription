@@ -29,9 +29,22 @@
 		F1A3CACD2D5136C800D61D73 /* AI-VisualTranscend-Real-Time-AI-And-AR-TranscriptionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AI-VisualTranscend-Real-Time-AI-And-AR-TranscriptionUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		F164E9532D6661C600718512 /* Exceptions for "AI-VisualTranscend-Real-Time-AI-And-AR-Transcription" folder in "AI-VisualTranscend-Real-Time-AI-And-AR-Transcription" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = F1A3CAB22D5136C700D61D73 /* AI-VisualTranscend-Real-Time-AI-And-AR-Transcription */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		F1A3CAB52D5136C700D61D73 /* AI-VisualTranscend-Real-Time-AI-And-AR-Transcription */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				F164E9532D6661C600718512 /* Exceptions for "AI-VisualTranscend-Real-Time-AI-And-AR-Transcription" folder in "AI-VisualTranscend-Real-Time-AI-And-AR-Transcription" target */,
+			);
 			path = "AI-VisualTranscend-Real-Time-AI-And-AR-Transcription";
 			sourceTree = "<group>";
 		};
@@ -396,9 +409,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AI-VisualTranscend-Real-Time-AI-And-AR-Transcription/Preview Content\"";
+				DEVELOPMENT_TEAM = Q2JNJNK94R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "AI-VisualTranscend-Real-Time-AI-And-AR-Transcription/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "AI-VisualTranscend";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app requires access to the microphone for real-time speech transcription.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "This app uses speech recognition to transcribe your speech in real-time.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -425,9 +442,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AI-VisualTranscend-Real-Time-AI-And-AR-Transcription/Preview Content\"";
+				DEVELOPMENT_TEAM = Q2JNJNK94R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "AI-VisualTranscend-Real-Time-AI-And-AR-Transcription/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "AI-VisualTranscend";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app requires access to the microphone for real-time speech transcription.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "This app uses speech recognition to transcribe your speech in real-time.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
